@@ -1,5 +1,26 @@
-apps = "
-    azure-cli,jq,openssl,discord,gitkraken,iterm2,microsoft-edge,shottr,steam,spotify,dotnet,istat-menus,powershell
-"
+#!/usr/bin/env bash
 
-brew install $apps
+apps=(
+    "azure-cli"
+    "discord"
+    "alt-tab"
+    "alfred"
+    "discord"
+    "dotnet"
+    "firefox"
+    "gh"
+    "github"
+    "gitkraken"
+    "grandperspective"
+    "lulu"
+    "microsoft-edge"
+    "spotify"
+    "shottr"
+    "steam"
+    "terraform"
+)
+
+for app in "${apps[@]}"
+do
+    brew install $app
+done
